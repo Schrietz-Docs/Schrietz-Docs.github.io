@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.784323724430">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.784324222276">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../images/homelogo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.784323724430" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.784324222276" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.784323724430" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.784324222276" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.784323724430" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.784324222276" data-turbo-eval="false" defer></script>
     <script id="mermaid-js" data-cfasync="false" src="../../resources/js/mermaid.js?v=3.6.0" defer></script>
 </head>
 <body>
@@ -259,9 +259,6 @@
         <span>Ölspur</span>
     </h2>
 </doc-anchor-target>
-<div style="position: relative;">
-    <img src="/images/anleitung/besen_bindemittel.png" style="position: absolute; top: 170px; right: 100px; height: 300px;" />
-</div>
 <style>
     :is(.dark .dark\:bg-white) {
     background-color: transparent;
@@ -284,13 +281,16 @@ graph LR;
     style A fill:#FF4500,stroke:#ffff,stroke-width:2px,color:#000
     style B fill:#FFD700,stroke:#ffff,stroke-width:2px,color:#000
     style C fill:#32CD32,stroke:#ffff,stroke-width:2px,color:#000</pre></div>
+<div style="position: relative;">
+    <img src="/images/anleitung/besen_bindemittel.png" style="position: absolute; top: 50px; right: 100px; height: 300px;" />
+</div>
 <p>Zum Beseitigen der Ölspur benötigst du Bindemittel und einen Besen, die beide auf dem Dach des HLFs verlastet sind.</p>
 <p><br><br><br><br><br><br><br><br><br><br><br></p>
 <div style="position: relative;">
-    <img src="/images/anleitung/bindemittel_hlf_2.png" style="position: absolute; top: 70px; right: 600px; height: 300px;" />
+    <img src="/images/anleitung/bindemittel_hlf_2.png" style="position: absolute; top: 50px; right: 600px; height: 300px;" />
 </div>
 <div style="position: relative;">
-    <img src="/images/anleitung/besen_hlf_2.png" style="position: absolute; top: 70px; right: 200px; height: 300px;" />
+    <img src="/images/anleitung/besen_hlf_2.png" style="position: absolute; top: 50px; right: 200px; height: 300px;" />
 </div>
 <p>Streue das Bindemittel auf die Ölspur und nutze anschließend den Besen, um es gründlich zu verteilen und das Öl aufzunehmen.</p>
 <p><br><br><br><br><br><br><br><br><br><br><br></p>
@@ -301,19 +301,41 @@ graph LR;
         <span>Hängender Ast</span>
     </h2>
 </doc-anchor-target>
+<style>
+    :is(.dark .dark\:bg-white) {
+    background-color: transparent;
+    } 
+</style>
+<div class="diagram-container">
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'lineColor': '#ffff',
+      'tertiaryColor': '#ffff'
+    }
+  }
+}%%
+graph LR;
+    A[Kettensäge und Axt entnehmen] --&gt; B[Ast mit Kettensäge losschneiden]
+    B --&gt; C[Ast mit Axt zerkleinern]
+    
+    style A fill:#FF4500,stroke:#ffff,stroke-width:2px,color:#000
+    style B fill:#FFD700,stroke:#ffff,stroke-width:2px,color:#000
+    style C fill:#32CD32,stroke:#ffff,stroke-width:2px,color:#000</pre></div>
 <div style="position: relative;">
-    <img src="/images/anleitung/axt.png" style="position: absolute; top: 70px; right: 600px; height: 300px;" />
+    <img src="/images/anleitung/axt.png" style="position: absolute; top: 50px; right: 600px; height: 300px;" />
 </div>
 <div style="position: relative;">
-    <img src="/images/anleitung/kettensäge.png" style="position: absolute; top: 70px; right: 200px; height: 300px;" />
+    <img src="/images/anleitung/kettensäge.png" style="position: absolute; top: 50px; right: 200px; height: 300px;" />
 </div>
 <p>Die Kettensäge und die Axt müssen aus den Gerätefächern des Fahrzeugs entnommen werden.</p>
 <p><br><br><br><br><br><br><br><br><br><br><br></p>
 <div style="position: relative;">
-    <img src="/images/anleitung/ast_saege.png" style="position: absolute; top: 70px; right: 600px; height: 300px;" />
+    <img src="/images/anleitung/ast_saege.png" style="position: absolute; top: 50px; right: 600px; height: 300px;" />
 </div>
 <div style="position: relative;">
-    <img src="/images/anleitung/ast_axt.png" style="position: absolute; top: 70px; right: 200px; height: 300px;" />
+    <img src="/images/anleitung/ast_axt.png" style="position: absolute; top: 50px; right: 200px; height: 300px;" />
 </div>
 <p>Schneide den hängenden Ast mit der Kettensäge ab und zerkleinere ihn nach dem Fallen mit der Axt.</p>
 <p><br><br><br><br><br><br><br><br><br><br><br></p>
