@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.784660486043">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.784924151268">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="images/homelogo.png" rel="icon">
-    <link href="resources/css/retype.css?v=3.6.0.784660486043" rel="stylesheet">
+    <link href="resources/css/retype.css?v=3.6.0.784924151268" rel="stylesheet">
 
-    <script data-cfasync="false" src="resources/js/config.js?v=3.6.0.784660486043" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/config.js?v=3.6.0.784924151268" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.6.0.784660486043" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.6.0.784924151268" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R7RC9LK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -279,6 +279,54 @@
 </div>
 
 <hr>
+<div id="loader">
+  <img src="images/intro.gif" alt="Ladeanimation" class="loader-gif">
+</div>
+<style>
+  /* Der Ladebildschirm-Container */
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e; /* Hintergrundfarbe für den Ladebildschirm */
+    background-image: url('images/banner/hlf.png'); /* Hintergrundbild */
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1; /* Anfangsdeckkraft */
+    transition: opacity 1s ease; /* Übergang für das sanfte Ausblenden */
+  }
+  /* GIF im Ladebildschirm zentrieren und auf die Bildschirmgröße anpassen */
+  .loader-gif {
+    width: 65%;
+    height: 55%;
+    position: absolute;
+    top: 10%; /* Abstand vom oberen Rand des Bildschirms, anpassbar */
+  }
+</style>
+<script>
+    // Prüfen, ob die Seite in dieser Sitzung bereits besucht wurde
+    if (!sessionStorage.getItem("firstVisitDone")) {
+      // Ladebildschirm anzeigen und nach 2 Sekunden sanft ausblenden
+      setTimeout(function() {
+        document.getElementById("loader").style.opacity = "0"; // Transparenz auf 0 setzen
+        setTimeout(function() {
+          document.getElementById("loader").style.display = "none"; // Element nach dem Fade-out ausblenden
+        }, 2000); // 1 Sekunde warten, bis das Fade-out abgeschlossen ist
+      }, 3000); // 2 Sekunden warten
+      // Im sessionStorage markieren, dass der Ladebildschirm angezeigt wurde
+      sessionStorage.setItem("firstVisitDone", "true");
+    } else {
+      // Direkt ausblenden, falls die Seite bereits in dieser Sitzung besucht wurde
+      document.getElementById("loader").style.display = "none";
+    }
+</script>
 <doc-anchor-target id="einführung">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#einführung">#</doc-anchor-trigger>
@@ -290,6 +338,20 @@
     <img src="images/banner/einf%C3%BChrung_banner.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
+</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Mit Einführung beginnen</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>anleitung/melder/</span>
+    </div>
+    <a href="anleitung/melder/" class="absolute block inset-0"></a>
+</div>
 </p>
 <hr>
 <doc-anchor-target id="grundlagen-des-spiels">
@@ -306,8 +368,11 @@
 <li><strong>Realismus</strong>: Realistisches Schlauchsystem, detaillierte Feuerwehrfahrzeuge, große Karte</li>
 <li><strong>Level- und Rangsystem</strong>: Großes Rangsystem zur Freischaltung der Fahrzeuge und Teams</li>
 </ul>
-<img src="images/banner/thumbnail_basics.png" alt="Beschreibung des Bildes" style="width: 1200px;">
-<br><br>
+<p><figure class="content-center">
+    <img src="images/banner/thumbnail_basics.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
