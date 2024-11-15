@@ -14,21 +14,21 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Nooqi112</title>
-    <meta name="title" content="Nooqi112">
+    <title>Test</title>
+    <meta name="title" content="Test">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://DanieldamHH112.github.io/hidden_folder/nooqi112/">
+    <link rel="canonical" href="https://DanieldamHH112.github.io/hidden_folder/test/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://DanieldamHH112.github.io/hidden_folder/nooqi112/">
-    <meta property="og:title" content="Nooqi112">
+    <meta property="og:url" content="https://DanieldamHH112.github.io/hidden_folder/test/">
+    <meta property="og:title" content="Test">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://DanieldamHH112.github.io/hidden_folder/nooqi112/">
-    <meta property="twitter:title" content="Nooqi112">
+    <meta property="twitter:url" content="https://DanieldamHH112.github.io/hidden_folder/test/">
+    <meta property="twitter:title" content="Test">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -246,61 +246,85 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="nooqi112" class="break-words">
+<doc-anchor-target id="test" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nooqi112">#</doc-anchor-trigger>
-        <span>Nooqi112</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#test">#</doc-anchor-trigger>
+        <span>Test</span>
     </h1>
 </doc-anchor-target>
 <style>
-.card.nooqi112 {
-  width: 17%;
-  height: 19%;
-  background: #8bc34a;
-  border-radius: 15px;
-  box-shadow: 1px 0px 10px 0px #7bc12a;
-  position: absolute; /* Positioniere die Karte absolut */
-  top: 57%; /* Adjust the vertical position */
-  left: 28%; /* Center horizontally */
-  transform: translateX(-50%); /* Korrigiere die Zentrierung */
+.loaderspinner {
+  width: 6em;
+  height: 6em;
+  font-size: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.card.nooqi112 .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #6d983a;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
+.loaderspinner .face {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: animate023845 3s linear infinite;
 }
-.card.nooqi112 span {
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 20px;
+.loaderspinner .face:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  color: gold;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal;
 }
-.card.nooqi112 .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 18px;
-}
-.card.nooqi112 .img {
+.loaderspinner .face:nth-child(2) {
   width: 70%;
-  height: 50%;
-  margin: auto;
-  margin-top: 10%;
-  margin-left: 15%;
+  height: 70%;
+  color: lime;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse;
+}
+.loaderspinner .face .circle {
+  position: absolute;
+  width: 50%;
+  height: 0.1em;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: rotate(var(--deg));
+  transform-origin: left;
+}
+.loaderspinner .face .circle::before {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 2em,
+                0 0 4em,
+                0 0 6em,
+                0 0 8em,
+                0 0 10em,
+                0 0 0 0.5em rgba(255, 255, 0, 0.1);
+}
+@keyframes animate023845 {
+  to {
+    transform: rotate(1turn);
+  }
 }
 </style>
-<div class="card nooqi112">
-  <div class="card-border-top">
-  </div>
-  <img src="/images/avatars/nooqi.webp" alt="Bildbeschreibung" class="img"/>
-  <span>nooqi112</span>
-  <p class="job">Fotograf</p>
+<div class="loaderspinner">
+    <div class="face">
+        <div class="circle"></div>
+    </div>
+    <div class="face">
+        <div class="circle"></div>
+    </div>
 </div>
 
                                 
@@ -367,6 +391,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Nooqi112", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Test", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
