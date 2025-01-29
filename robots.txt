@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://DanieldamHH112.github.io/sitemap.xml.gz
+Sitemap: https://schrietz-docs.github.io/sitemap.xml.gz
