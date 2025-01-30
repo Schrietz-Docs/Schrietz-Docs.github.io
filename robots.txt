@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://schrietz-docs.github.io/sitemap.xml.gz
+Sitemap: https://schrietz-docs.github.io/Schrietz-Docs.github.io/sitemap.xml.gz
